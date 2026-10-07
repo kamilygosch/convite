@@ -1,1244 +1,1184 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport"
-      content="width=device-width,
+    <meta name="viewport" content="width=device-width,
       initial-scale=1.0,
       maximum-scale=1.0,
       user-scalable=no">
 
-<title>Maria Eduarda • 17</title>
+    <title>Maria Eduarda • 17</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-<link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" 
-      rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
 
-<style>
-
-/* =========================================================
+    <style>
+        /* =========================================================
    RESET
 ========================================================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    -webkit-tap-highlight-color:transparent;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
 
-html,
-body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
 
-body{
-    font-family:"DM Sans",sans-serif;
-    background:#120018;
-    color:#fff;
-}
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #120018;
+            color: #fff;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    FUNDO
 ========================================================= */
 
-.background{
-    position:fixed;
-    inset:0;
-    overflow:hidden;
+        .background {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
 
-    background: 
-        radial-gradient(
-            circle at 50% 20%,
-            rgba(137,55,188,.55),
-            transparent 32%
-        ),
+            background:
+                radial-gradient(circle at 50% 20%,
+                    rgba(137, 55, 188, .55),
+                    transparent 32%),
 
-        radial-gradient(
-            circle at 10% 90%,
-            rgba(90,24,126,.5),
-            transparent 35%
-        ),
+                radial-gradient(circle at 10% 90%,
+                    rgba(90, 24, 126, .5),
+                    transparent 35%),
 
-        radial-gradient(
-            circle at 90% 70%,
-            rgba(115,38,165,.45),
-            transparent 35%
-        ),
+                radial-gradient(circle at 90% 70%,
+                    rgba(115, 38, 165, .45),
+                    transparent 35%),
 
-        #120018;
-}
+                #120018;
+        }
 
 
-.glow{
-    position:absolute;
+        .glow {
+            position: absolute;
 
-    width:320px;
-    height:320px;
+            width: 320px;
+            height: 320px;
 
-    border-radius:50%;
+            border-radius: 50%;
 
-    background:#bb6cff;
+            background: #bb6cff;
 
-    filter:blur(130px);
+            filter: blur(130px);
 
-    opacity:.13;
+            opacity: .13;
 
-    animation: 
-        floatingGlow 8s ease-in-out infinite alternate;
-}
+            animation:
+                floatingGlow 8s ease-in-out infinite alternate;
+        }
 
-.glow.one{
-    top:-140px;
-    left:-100px;
-}
+        .glow.one {
+            top: -140px;
+            left: -100px;
+        }
 
-.glow.two{
-    right:-130px;
-    bottom:-150px;
+        .glow.two {
+            right: -130px;
+            bottom: -150px;
 
-    animation-delay:2s;
-}
-
-
-@keyframes floatingGlow{
-
-    from{
-        transform:
-            translate(0,0)
-            scale(1);
-    }
-
-    to{
-        transform:
-            translate(35px,-20px)
-            scale(1.18);
-    }
-}
+            animation-delay: 2s;
+        }
 
 
-/* =========================================================
+        @keyframes floatingGlow {
+
+            from {
+                transform:
+                    translate(0, 0) scale(1);
+            }
+
+            to {
+                transform:
+                    translate(35px, -20px) scale(1.18);
+            }
+        }
+
+
+        /* =========================================================
    PARTÍCULAS
 ========================================================= */
 
-.particles{
-    position:absolute;
-    inset:0;
-    pointer-events:none;
-}
+        .particles {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
 
-.particle{
-    position:absolute;
+        .particle {
+            position: absolute;
 
-    width:3px;
-    height:3px;
+            width: 3px;
+            height: 3px;
 
-    border-radius:50%;
+            border-radius: 50%;
 
-    background:#ead7ff;
+            background: #ead7ff;
 
-    opacity:.5;
+            opacity: .5;
 
-    animation:
-        particleRise linear infinite;
-}
+            animation:
+                particleRise linear infinite;
+        }
 
-@keyframes particleRise{
+        @keyframes particleRise {
 
-    from{
-        transform:
-            translateY(110vh)
-            scale(.3);
+            from {
+                transform:
+                    translateY(110vh) scale(.3);
 
-        opacity:0;
-    }
+                opacity: 0;
+            }
 
-    20%{
-        opacity:.7;
-    }
+            20% {
+                opacity: .7;
+            }
 
-    80%{
-        opacity:.5;
-    }
+            80% {
+                opacity: .5;
+            }
 
-    to{
-        transform:
-            translateY(-10vh)
-            scale(1);
+            to {
+                transform:
+                    translateY(-10vh) scale(1);
 
-        opacity:0;
-    }
-}
+                opacity: 0;
+            }
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TELAS
 ========================================================= */
 
-.screen{
+        .screen {
 
-    position:absolute;
+            position: absolute;
 
-    inset:0;
+            inset: 0;
 
-    display:flex;
+            display: flex;
 
-    align-items:center;
-    justify-content:center;
+            align-items: center;
+            justify-content: center;
 
-    padding:22px;
+            padding: 22px;
 
-    opacity:0;
+            opacity: 0;
 
-    visibility:hidden;
+            visibility: hidden;
 
-    transform:
-        scale(1.06)
-        translateY(12px);
+            transform:
+                scale(1.06) translateY(12px);
 
-    transition:
-        opacity .9s ease,
-        transform 1s cubic-bezier(.22,.61,.36,1);
+            transition:
+                opacity .9s ease,
+                transform 1s cubic-bezier(.22, .61, .36, 1);
 
-    z-index:5;
-}
+            z-index: 5;
+        }
 
-.screen.active{
+        .screen.active {
 
-    opacity:1;
+            opacity: 1;
 
-    visibility:visible;
+            visibility: visible;
 
-    transform:
-        scale(1)
-        translateY(0);
-}
+            transform:
+                scale(1) translateY(0);
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TEXTOS
 ========================================================= */
 
-.eyebrow{
+        .eyebrow {
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:5px;
+            letter-spacing: 5px;
 
-    text-transform:uppercase;
+            text-transform: uppercase;
 
-    opacity:.5;
-}
+            opacity: .5;
+        }
 
-.serif{
-    font-family:"Playfair Display",serif;
-}
+        .serif {
+            font-family: "Playfair Display", serif;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    BOTÕES
 ========================================================= */
 
-.magic-button{
+        .magic-button {
 
-    border:1px solid rgba(255,255,255,.25);
+            border: 1px solid rgba(255, 255, 255, .25);
 
-    background:
-        rgba(255,255,255,.07);
+            background:
+                rgba(255, 255, 255, .07);
 
-    color:#fff;
+            color: #fff;
 
-    width:170px;
+            width: 170px;
 
-    height:52px;
+            height: 52px;
 
-    border-radius:100px;
+            border-radius: 100px;
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:3px;
+            letter-spacing: 3px;
 
-    backdrop-filter:blur(15px);
+            backdrop-filter: blur(15px);
 
-    transition:.35s;
+            transition: .35s;
 
-    cursor:pointer;
-}
+            cursor: pointer;
+        }
 
-.magic-button:active{
+        .magic-button:active {
 
-    transform:scale(.92);
+            transform: scale(.92);
 
-    background:#fff;
+            background: #fff;
 
-    color:#26002f;
-}
+            color: #26002f;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TELA 01
 ========================================================= */
 
-.intro{
+        .intro {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.intro .tiny{
+        .intro .tiny {
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:4px;
+            letter-spacing: 4px;
 
-    text-transform:uppercase;
+            text-transform: uppercase;
 
-    opacity:.45;
+            opacity: .45;
 
-    margin-bottom:30px;
-}
+            margin-bottom: 30px;
+        }
 
-.intro h1{
+        .intro h1 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-weight:400;
+            font-weight: 400;
 
-    font-size:
-        clamp(48px,14vw,80px);
+            font-size:
+                clamp(48px, 14vw, 80px);
 
-    line-height:.95;
-}
+            line-height: .95;
+        }
 
-.intro h1 em{
+        .intro h1 em {
 
-    color:#d4a2ff;
+            color: #d4a2ff;
 
-    font-style:italic;
-}
+            font-style: italic;
+        }
 
-.intro p{
+        .intro p {
 
-    margin-top:26px;
+            margin-top: 26px;
 
-    font-size:12px;
+            font-size: 12px;
 
-    line-height:1.8;
+            line-height: 1.8;
 
-    opacity:.55;
-}
+            opacity: .55;
+        }
 
-.intro .magic-button{
+        .intro .magic-button {
 
-    margin-top:40px;
-}
+            margin-top: 40px;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TELA 02
    ENVELOPE
 ========================================================= */
 
-.envelope-scene{
+        .envelope-scene {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.envelope-scene h2{
+        .envelope-scene h2 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-size:39px;
+            font-size: 39px;
 
-    font-weight:400;
+            font-weight: 400;
 
-    margin-top:12px;
-}
+            margin-top: 12px;
+        }
 
-.envelope-area{
+        .envelope-area {
 
-    position:relative;
+            position: relative;
 
-    width:min(330px,86vw);
+            width: min(330px, 86vw);
 
-    height:245px;
+            height: 245px;
 
-    margin:48px auto 0;
+            margin: 48px auto 0;
 
-    perspective:1200px;
-}
+            perspective: 1200px;
+        }
 
 
-/* Envelope */
+        /* Envelope */
 
-.envelope{
+        .envelope {
 
-    position:absolute;
+            position: absolute;
 
-    inset:0;
+            inset: 0;
 
-    cursor:pointer;
+            cursor: pointer;
 
-    transform-style:preserve-3d;
+            transform-style: preserve-3d;
 
-    transition:
-        transform .8s
-        cubic-bezier(.22,.61,.36,1);
-}
+            transition:
+                transform .8s cubic-bezier(.22, .61, .36, 1);
+        }
 
-.envelope:active{
+        .envelope:active {
 
-    transform:scale(.96);
-}
+            transform: scale(.96);
+        }
 
 
-/* Parte principal */
+        /* Parte principal */
 
-.envelope-body{
+        .envelope-body {
 
-    position:absolute;
+            position: absolute;
 
-    inset:0;
+            inset: 0;
 
-    border-radius:10px;
+            border-radius: 10px;
 
-    overflow:hidden;
+            overflow: hidden;
 
-    background:
-        linear-gradient(
-            145deg,
-            #9344c7,
-            #54206f
-        );
+            background:
+                linear-gradient(145deg,
+                    #9344c7,
+                    #54206f);
 
-    box-shadow:
+            box-shadow:
 
-        0 35px 90px
-        rgba(0,0,0,.55),
+                0 35px 90px rgba(0, 0, 0, .55),
 
-        inset 0 1px 0
-        rgba(255,255,255,.25);
-}
+                inset 0 1px 0 rgba(255, 255, 255, .25);
+        }
 
 
-/* brilho diagonal */
+        /* brilho diagonal */
 
-.envelope-body:after{
+        .envelope-body:after {
 
-    content:"";
+            content: "";
 
-    position:absolute;
+            position: absolute;
 
-    inset:-100%;
+            inset: -100%;
 
-    background:
-        linear-gradient(
-            115deg,
-            transparent 42%,
-            rgba(255,255,255,.16) 50%,
-            transparent 58%
-        );
+            background:
+                linear-gradient(115deg,
+                    transparent 42%,
+                    rgba(255, 255, 255, .16) 50%,
+                    transparent 58%);
 
-    animation:
-        envelopeShine 4s infinite;
-}
+            animation:
+                envelopeShine 4s infinite;
+        }
 
-@keyframes envelopeShine{
+        @keyframes envelopeShine {
 
-    0%{
-        transform:translateX(-35%);
-    }
+            0% {
+                transform: translateX(-35%);
+            }
 
-    45%,100%{
-        transform:translateX(35%);
-    }
-}
+            45%,
+            100% {
+                transform: translateX(35%);
+            }
+        }
 
 
-/* Aba */
+        /* Aba */
 
-.flap{
+        .flap {
 
-    position:absolute;
+            position: absolute;
 
-    z-index:5;
+            z-index: 5;
 
-    top:0;
-    left:0;
+            top: 0;
+            left: 0;
 
-    width:100%;
-    height:120px;
+            width: 100%;
+            height: 120px;
 
-    background:
-        linear-gradient(
-            145deg,
-            #b466dd,
-            #7c32a8
-        );
+            background:
+                linear-gradient(145deg,
+                    #b466dd,
+                    #7c32a8);
 
-    clip-path:
-        polygon(
-            0 0,
-            100% 0,
-            50% 100%
-        );
+            clip-path:
+                polygon(0 0,
+                    100% 0,
+                    50% 100%);
 
-    transform-origin:top center;
+            transform-origin: top center;
 
-    transition:
-        transform
-        1.35s
-        cubic-bezier(.22,.61,.36,1);
+            transition:
+                transform 1.35s cubic-bezier(.22, .61, .36, 1);
 
-    filter:
-        drop-shadow(
-            0 8px 8px
-            rgba(0,0,0,.2)
-        );
-}
+            filter:
+                drop-shadow(0 8px 8px rgba(0, 0, 0, .2));
+        }
 
 
-/* Lacre */
+        /* Lacre */
 
-.seal{
+        .seal {
 
-    position:absolute;
+            position: absolute;
 
-    z-index:10;
+            z-index: 10;
 
-    left:50%;
-    top:50%;
+            left: 50%;
+            top: 50%;
 
-    transform:
-        translate(-50%,-50%);
+            transform:
+                translate(-50%, -50%);
 
-    width:68px;
-    height:68px;
+            width: 68px;
+            height: 68px;
 
-    border-radius:50%;
+            border-radius: 50%;
 
-    display:flex;
+            display: flex;
 
-    align-items:center;
-    justify-content:center;
+            align-items: center;
+            justify-content: center;
 
-    color:#48115d;
+            color: #48115d;
 
-    font-size:8px;
+            font-size: 8px;
 
-    letter-spacing:2px;
+            letter-spacing: 2px;
 
-    background:
-        radial-gradient(
-            circle at 35% 30%,
-            #fff,
-            #dcb0ff 45%,
-            #a65bd1
-        );
+            background:
+                radial-gradient(circle at 35% 30%,
+                    #fff,
+                    #dcb0ff 45%,
+                    #a65bd1);
 
-    box-shadow:
+            box-shadow:
 
-        0 0 0 5px
-        rgba(255,255,255,.08),
+                0 0 0 5px rgba(255, 255, 255, .08),
 
-        0 0 45px
-        rgba(210,145,255,.55);
+                0 0 45px rgba(210, 145, 255, .55);
 
-    transition:
-        transform .6s,
-        opacity .4s;
-}
+            transition:
+                transform .6s,
+                opacity .4s;
+        }
 
-.envelope.open .flap{
+        .envelope.open .flap {
 
-    transform:
-        rotateX(180deg);
-}
+            transform:
+                rotateX(180deg);
+        }
 
-.envelope.open .seal{
+        .envelope.open .seal {
 
-    transform:
-        translate(-50%,-50%)
-        scale(0)
-        rotate(180deg);
+            transform:
+                translate(-50%, -50%) scale(0) rotate(180deg);
 
-    opacity:0;
-}
+            opacity: 0;
+        }
 
 
-/* texto */
+        /* texto */
 
-.envelope-hint{
+        .envelope-hint {
 
-    margin-top:28px;
+            margin-top: 28px;
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:3px;
+            letter-spacing: 3px;
 
-    opacity:.5;
+            opacity: .5;
 
-    animation:
-        pulseHint 2s infinite;
-}
+            animation:
+                pulseHint 2s infinite;
+        }
 
-@keyframes pulseHint{
+        @keyframes pulseHint {
 
-    50%{
-        opacity:.25;
-    }
-}
+            50% {
+                opacity: .25;
+            }
+        }
 
 
-/* =========================================================
+        /* =========================================================
    GRANDE REVELAÇÃO
 ========================================================= */
 
-.reveal-flash{
+        .reveal-flash {
 
-    position:fixed;
+            position: fixed;
 
-    inset:0;
+            inset: 0;
 
-    background:#fff;
+            background: #fff;
 
-    opacity:0;
+            opacity: 0;
 
-    pointer-events:none;
+            pointer-events: none;
 
-    z-index:50;
-}
+            z-index: 50;
+        }
 
-.reveal-flash.go{
+        .reveal-flash.go {
 
-    animation:
-        flashReveal 1.5s
-        cubic-bezier(.22,.61,.36,1);
-}
+            animation:
+                flashReveal 1.5s cubic-bezier(.22, .61, .36, 1);
+        }
 
-@keyframes flashReveal{
+        @keyframes flashReveal {
 
-    0%{
-        opacity:0;
-    }
+            0% {
+                opacity: 0;
+            }
 
-    20%{
-        opacity:.85;
-    }
+            20% {
+                opacity: .85;
+            }
 
-    100%{
-        opacity:0;
-    }
-}
-
-
-/* partículas explosivas */
-
-.burst{
-
-    position:fixed;
-
-    left:50%;
-    top:50%;
-
-    width:8px;
-    height:8px;
-
-    border-radius:50%;
-
-    background:#e6c7ff;
-
-    pointer-events:none;
-
-    z-index:60;
-
-    opacity:0;
-
-}
+            100% {
+                opacity: 0;
+            }
+        }
 
 
-/* =========================================================
+        /* partículas explosivas */
+
+        .burst {
+
+            position: fixed;
+
+            left: 50%;
+            top: 50%;
+
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: #e6c7ff;
+
+            pointer-events: none;
+
+            z-index: 60;
+
+            opacity: 0;
+
+        }
+
+
+        /* =========================================================
    TELA 03
    CARTA ORIGINAL
 ========================================================= */
 
-.card-scene{
+        .card-scene {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.magic-card{
+        .magic-card {
 
-    position:relative;
+            position: relative;
 
-    width:min(365px,89vw);
+            width: min(365px, 89vw);
 
-    height:530px;
+            height: 530px;
 
-    margin:auto;
+            margin: auto;
 
-    border-radius:28px;
+            border-radius: 28px;
 
-    overflow:hidden;
+            overflow: hidden;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.14),
-            rgba(255,255,255,.035)
-        );
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, .14),
+                    rgba(255, 255, 255, .035));
 
-    border:
-        1px solid
-        rgba(255,255,255,.18);
+            border:
+                1px solid rgba(255, 255, 255, .18);
 
-    backdrop-filter:blur(25px);
+            backdrop-filter: blur(25px);
 
-    box-shadow:
+            box-shadow:
 
-        0 40px 100px
-        rgba(0,0,0,.45),
+                0 40px 100px rgba(0, 0, 0, .45),
 
-        inset 0 1px 0
-        rgba(255,255,255,.2);
-}
+                inset 0 1px 0 rgba(255, 255, 255, .2);
+        }
 
 
-.magic-card:before{
+        .magic-card:before {
 
-    content:"";
+            content: "";
 
-    position:absolute;
+            position: absolute;
 
-    width:280px;
-    height:280px;
+            width: 280px;
+            height: 280px;
 
-    border-radius:50%;
+            border-radius: 50%;
 
-    background:#c16aff;
+            background: #c16aff;
 
-    filter:blur(100px);
+            filter: blur(100px);
 
-    opacity:.13;
+            opacity: .13;
 
-    top:-130px;
-    right:-100px;
-}
+            top: -130px;
+            right: -100px;
+        }
 
-.magic-card-content{
+        .magic-card-content {
 
-    position:relative;
+            position: relative;
 
-    z-index:2;
+            z-index: 2;
 
-    height:100%;
+            height: 100%;
 
-    display:flex;
+            display: flex;
 
-    flex-direction:column;
+            flex-direction: column;
 
-    align-items:center;
+            align-items: center;
 
-    justify-content:space-between;
+            justify-content: space-between;
 
-    padding:45px 25px;
-}
+            padding: 45px 25px;
+        }
 
-.number17{
+        .number17 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-size:115px;
+            font-size: 115px;
 
-    line-height:.7;
+            line-height: .7;
 
-    color:#d4a4ff;
+            color: #d4a4ff;
 
-    text-shadow:
-        0 0 45px
-        rgba(206,139,255,.25);
-}
+            text-shadow:
+                0 0 45px rgba(206, 139, 255, .25);
+        }
 
-.magic-card h1{
+        .magic-card h1 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-weight:400;
+            font-weight: 400;
 
-    font-size:46px;
+            font-size: 46px;
 
-    line-height:1;
-}
+            line-height: 1;
+        }
 
-.magic-card h1 span{
+        .magic-card h1 span {
 
-    display:block;
+            display: block;
 
-    color:#d3a0ff;
+            color: #d3a0ff;
 
-    font-style:italic;
-}
+            font-style: italic;
+        }
 
-.magic-card-bottom{
+        .magic-card-bottom {
 
-    font-size:8px;
+            font-size: 8px;
 
-    letter-spacing:4px;
+            letter-spacing: 4px;
 
-    opacity:.4;
-}
+            opacity: .4;
+        }
 
-.card-button{
+        .card-button {
 
-    margin-top:22px;
-}
+            margin-top: 22px;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TELA 04
    MURAL DE UMA ÚNICA FOTO
 ========================================================= */
 
-.mural-scene{
+        .mural-scene {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.mural-scene h2{
+        .mural-scene h2 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-size:43px;
+            font-size: 43px;
 
-    font-weight:400;
+            font-weight: 400;
 
-    margin-top:12px;
+            margin-top: 12px;
 
-    line-height:1.05;
-}
+            line-height: 1.05;
+        }
 
-.mural-scene p{
+        .mural-scene p {
 
-    margin-top:14px;
+            margin-top: 14px;
 
-    font-size:12px;
+            font-size: 12px;
 
-    opacity:.5;
-}
+            opacity: .5;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    MURAL
 ========================================================= */
 
-.photo-mural{
+        .photo-mural {
 
-    position:relative;
+            position: relative;
 
-    width:min(365px,89vw);
+            width: min(365px, 89vw);
 
-    height:430px;
+            height: 430px;
 
-    margin:35px auto 0;
+            margin: 35px auto 0;
 
-    border-radius:28px;
+            border-radius: 28px;
 
-    overflow:hidden;
+            overflow: hidden;
 
-    padding:9px;
+            padding: 9px;
 
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.15),
-            rgba(255,255,255,.035)
-        );
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, .15),
+                    rgba(255, 255, 255, .035));
 
-    border:
-        1px solid
-        rgba(255,255,255,.18);
+            border:
+                1px solid rgba(255, 255, 255, .18);
 
-    backdrop-filter:blur(20px);
+            backdrop-filter: blur(20px);
 
-    box-shadow:
+            box-shadow:
 
-        0 40px 100px
-        rgba(0,0,0,.45),
+                0 40px 100px rgba(0, 0, 0, .45),
 
-        inset 0 1px 0
-        rgba(255,255,255,.18);
+                inset 0 1px 0 rgba(255, 255, 255, .18);
 
-    transition:
-        transform .55s
-        cubic-bezier(.22,.61,.36,1),
-        box-shadow .55s;
-}
+            transition:
+                transform .55s cubic-bezier(.22, .61, .36, 1),
+                box-shadow .55s;
+        }
 
 
-/* brilho sutil atrás da montagem */
+        /* brilho sutil atrás da montagem */
 
-.photo-mural:before{
+        .photo-mural:before {
 
-    content:"";
+            content: "";
 
-    position:absolute;
+            position: absolute;
 
-    width:220px;
-    height:220px;
+            width: 220px;
+            height: 220px;
 
-    border-radius:50%;
+            border-radius: 50%;
 
-    background:#bd68ff;
+            background: #bd68ff;
 
-    filter:blur(90px);
+            filter: blur(90px);
 
-    opacity:.18;
+            opacity: .18;
 
-    top:-80px;
-    left:50%;
+            top: -80px;
+            left: 50%;
 
-    transform:translateX(-50%);
+            transform: translateX(-50%);
 
-    pointer-events:none;
-}
-
-
-/* A SUA MONTAGEM */
-
-.photo-mural img{
-
-    position:relative;
-
-    z-index:2;
-
-    display:block;
-
-    width:100%;
-
-    height:100%;
-
-    object-fit:cover;
-
-    border-radius:21px;
-
-    box-shadow:
-        0 15px 35px
-        rgba(0,0,0,.35);
-
-    cursor:pointer;
-
-    transition:
-        transform .6s
-        cubic-bezier(.22,.61,.36,1),
-        filter .6s,
-        box-shadow .6s;
-}
+            pointer-events: none;
+        }
 
 
-/* Ao tocar, a montagem inteira cresce */
+        /* A SUA MONTAGEM */
 
-.photo-mural.active{
+        .photo-mural img {
 
-    transform:scale(1.035);
+            position: relative;
 
-    box-shadow:
+            z-index: 2;
 
-        0 45px 110px
-        rgba(0,0,0,.55),
+            display: block;
 
-        0 0 45px
-        rgba(191,105,255,.22);
-}
+            width: 100%;
 
-.photo-mural.active img{
+            height: 100%;
 
-    transform:scale(1.025);
+            object-fit: cover;
 
-    filter:brightness(1.06);
+            border-radius: 21px;
 
-    box-shadow:
-        0 20px 50px
-        rgba(0,0,0,.45);
-}
+            box-shadow:
+                0 15px 35px rgba(0, 0, 0, .35);
+
+            cursor: pointer;
+
+            transition:
+                transform .6s cubic-bezier(.22, .61, .36, 1),
+                filter .6s,
+                box-shadow .6s;
+        }
 
 
-/* =========================================================
+        /* Ao tocar, a montagem inteira cresce */
+
+        .photo-mural.active {
+
+            transform: scale(1.035);
+
+            box-shadow:
+
+                0 45px 110px rgba(0, 0, 0, .55),
+
+                0 0 45px rgba(191, 105, 255, .22);
+        }
+
+        .photo-mural.active img {
+
+            transform: scale(1.025);
+
+            filter: brightness(1.06);
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, .45);
+        }
+
+
+        /* =========================================================
    TELA 05
 ========================================================= */
 
-.details-scene{
+        .details-scene {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.details-scene h2{
+        .details-scene h2 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-weight:400;
+            font-weight: 400;
 
-    font-size:45px;
+            font-size: 45px;
 
-    line-height:1.05;
+            line-height: 1.05;
 
-    margin-top:15px;
-}
+            margin-top: 15px;
+        }
 
-.details-scene h2 em{
+        .details-scene h2 em {
 
-    color:#d2a0ff;
+            color: #d2a0ff;
 
-    font-style:italic;
-}
+            font-style: italic;
+        }
 
-.details-box{
+        .details-box {
 
-    width:min(390px,90vw);
+            width: min(390px, 90vw);
 
-    margin:38px auto 0;
+            margin: 38px auto 0;
 
-    padding:12px 25px;
+            padding: 12px 25px;
 
-    border-radius:25px;
+            border-radius: 25px;
 
-    background:
-        rgba(255,255,255,.055);
+            background:
+                rgba(255, 255, 255, .055);
 
-    border:
-        1px solid
-        rgba(255,255,255,.15);
+            border:
+                1px solid rgba(255, 255, 255, .15);
 
-    backdrop-filter:blur(25px);
+            backdrop-filter: blur(25px);
 
-    box-shadow:
-        0 30px 80px
-        rgba(0,0,0,.3);
-}
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, .3);
+        }
 
-.detail{
+        .detail {
 
-    padding:22px 0;
+            padding: 22px 0;
 
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.09);
-}
+            border-bottom:
+                1px solid rgba(255, 255, 255, .09);
+        }
 
-.detail:last-child{
-    border-bottom:none;
-}
+        .detail:last-child {
+            border-bottom: none;
+        }
 
-.detail label{
+        .detail label {
 
-    display:block;
+            display: block;
 
-    font-size:8px;
+            font-size: 8px;
 
-    letter-spacing:4px;
+            letter-spacing: 4px;
 
-    opacity:.4;
+            opacity: .4;
 
-    margin-bottom:8px;
-}
+            margin-bottom: 8px;
+        }
 
-.detail strong{
+        .detail strong {
 
-    font-size:14px;
+            font-size: 14px;
 
-    font-weight:400;
-}
+            font-weight: 400;
+        }
 
-.details-button{
-    margin-top:28px;
-}
+        .details-button {
+            margin-top: 28px;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    TELA FINAL
 ========================================================= */
 
-.final-scene{
+        .final-scene {
 
-    width:100%;
+            width: 100%;
 
-    text-align:center;
-}
+            text-align: center;
+        }
 
-.final-scene .small{
+        .final-scene .small {
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:5px;
+            letter-spacing: 5px;
 
-    opacity:.45;
-}
+            opacity: .45;
+        }
 
-.final-number{
+        .final-number {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-size:
-        clamp(120px,38vw,170px);
+            font-size:
+                clamp(120px, 38vw, 170px);
 
-    line-height:.7;
+            line-height: .7;
 
-    color:#d1a0ff;
+            color: #d1a0ff;
 
-    text-shadow:
-        0 0 60px
-        rgba(202,128,255,.3);
-}
+            text-shadow:
+                0 0 60px rgba(202, 128, 255, .3);
+        }
 
-.final-scene h2{
+        .final-scene h2 {
 
-    font-family:"Playfair Display",serif;
+            font-family: "Playfair Display", serif;
 
-    font-size:43px;
+            font-size: 43px;
 
-    font-weight:400;
+            font-weight: 400;
 
-    margin-top:38px;
-}
+            margin-top: 38px;
+        }
 
-.final-scene p{
+        .final-scene p {
 
-    font-size:12px;
+            font-size: 12px;
 
-    line-height:1.8;
+            line-height: 1.8;
 
-    opacity:.5;
+            opacity: .5;
 
-    margin-top:16px;
-}
+            margin-top: 16px;
+        }
 
-.final-button{
+        .final-button {
 
-    margin-top:34px;
+            margin-top: 34px;
 
-    height:54px;
+            height: 54px;
 
-    width:175px;
+            width: 175px;
 
-    border-radius:100px;
+            border-radius: 100px;
 
-    border:none;
+            border: none;
 
-    background:#fff;
+            background: #fff;
 
-    color:#280035;
+            color: #280035;
 
-    font-size:9px;
+            font-size: 9px;
 
-    letter-spacing:3px;
+            letter-spacing: 3px;
 
-    cursor:pointer;
+            cursor: pointer;
 
-    transition:.4s;
-}
+            transition: .4s;
+        }
 
-.final-button:active{
+        .final-button:active {
 
-    transform:scale(.9);
-}
+            transform: scale(.9);
+        }
 
 
-/* =========================================================
+        /* =========================================================
    CONFETES FINAIS
    SEM FLASH
    SEM WAVE
    SOMENTE CONFETES
 ========================================================= */
 
-.confetti{
+        .confetti {
 
-    position:fixed;
+            position: fixed;
 
-    left:50%;
-    top:50%;
+            left: 50%;
+            top: 50%;
 
-    width:7px;
-    height:13px;
+            width: 7px;
+            height: 13px;
 
-    z-index:120;
+            z-index: 120;
 
-    pointer-events:none;
+            pointer-events: none;
 
-    opacity:0;
+            opacity: 0;
 
-    border-radius:2px;
-}
+            border-radius: 2px;
+        }
 
 
-/* =========================================================
+        /* =========================================================
    CELULAR
 ========================================================= */
 
-@media(max-width:500px){
+        @media(max-width:500px) {
 
-    .screen{
-        padding:18px;
-    }
+            .screen {
+                padding: 18px;
+            }
 
-    .magic-card{
-        height:510px;
-    }
+            .magic-card {
+                height: 510px;
+            }
 
-    .number17{
-        font-size:95px;
-    }
+            .number17 {
+                font-size: 95px;
+            }
 
-    .magic-card h1{
-        font-size:43px;
-    }
+            .magic-card h1 {
+                font-size: 43px;
+            }
 
-    .envelope-area{
-        width:300px;
-        height:220px;
-    }
+            .envelope-area {
+                width: 300px;
+                height: 220px;
+            }
 
-    .photo-mural{
-        width:min(365px,90vw);
-        height:400px;
-        margin-top:28px;
-    }
+            .photo-mural {
+                width: min(365px, 90vw);
+                height: 400px;
+                margin-top: 28px;
+            }
 
-}
+        }
 
-@media(max-height:700px){
+        @media(max-height:700px) {
 
-    .photo-mural{
-        height:350px;
-        margin-top:22px;
-    }
+            .photo-mural {
+                height: 350px;
+                margin-top: 22px;
+            }
 
-    .mural-scene h2{
-        font-size:36px;
-    }
+            .mural-scene h2 {
+                font-size: 36px;
+            }
 
-}
-
-</style>
+        }
+    </style>
 
 </head>
 
@@ -1246,200 +1186,181 @@ body{
 <body>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      FUNDO
 ===================================================== -->
 
-<div class="background">
+    <div class="background">
 
-    <div class="glow one"></div>
+        <div class="glow one"></div>
 
-    <div class="glow two"></div>
+        <div class="glow two"></div>
 
-    <div
-        class="particles"
-        id="particles">
+        <div class="particles" id="particles">
+        </div>
+
     </div>
 
-</div>
+
+    <div class="reveal-flash" id="revealFlash">
+    </div>
 
 
-<div
-    class="reveal-flash"
-    id="revealFlash">
-</div>
-
-
-<!-- =====================================================
+    <!-- =====================================================
      TELA 01
 ===================================================== -->
 
-<section
-    class="screen active"
-    id="screen1">
+    <section class="screen active" id="screen1">
 
-    <div class="intro">
+        <div class="intro">
 
-        <div class="tiny">
-            um momento especial
+            <div class="tiny">
+                um momento especial
+            </div>
+
+            <h1>
+
+                Você recebeu<br>
+
+                <em>um convite.</em>
+
+            </h1>
+
+            <p>
+
+                Venha fazer parte do meu dia<br>
+
+
+
+            </p>
+
+            <button class="magic-button" onclick="goTo(2)">
+
+                ABRIR
+
+            </button>
+
         </div>
 
-        <h1>
-
-            Você recebeu<br>
-
-            <em>um convite.</em>
-
-        </h1>
-
-        <p>
-
-            Venha fazer parte do meu dia<br>
-
-        
-
-        </p>
-
-        <button
-            class="magic-button"
-            onclick="goTo(2)">
-
-            ABRIR
-
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      TELA 02
 ===================================================== -->
 
-<section
-    class="screen"
-    id="screen2">
+    <section class="screen" id="screen2">
 
-    <div class="envelope-scene">
+        <div class="envelope-scene">
 
-        <div class="eyebrow">
-           
-        </div>
+            <div class="eyebrow">
 
-        <h2>
-           
-        </h2>
+            </div>
+
+            <h2>
+
+            </h2>
 
 
-        <div class="envelope-area">
+            <div class="envelope-area">
 
-            <div
-                class="envelope"
-                id="envelope"
-                onclick="openEnvelope()">
+                <div class="envelope" id="envelope" onclick="openEnvelope()">
 
-                <div class="envelope-body"></div>
+                    <div class="envelope-body"></div>
 
-                <div class="flap"></div>
+                    <div class="flap"></div>
 
-                <div class="seal">
-                    ABRIR
+                    <div class="seal">
+                        ABRIR
+                    </div>
+
                 </div>
 
             </div>
 
+
+            <div class="envelope-hint">
+                TOQUE NO LACRE
+            </div>
+
         </div>
 
-
-        <div class="envelope-hint">
-            TOQUE NO LACRE
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      TELA 03
 ===================================================== -->
 
-<section
-    class="screen"
-    id="screen3">
+    <section class="screen" id="screen3">
 
-    <div class="card-scene">
+        <div class="card-scene">
 
-        <div class="magic-card">
+            <div class="magic-card">
 
-            <div class="magic-card-content">
+                <div class="magic-card-content">
 
-                <div class="eyebrow">
-                    um dia especial
-                </div>
-
-                <div>
-
-                    <div class="number17">
-                        17
+                    <div class="eyebrow">
+                        um dia especial
                     </div>
 
-                    <h1>
-                        Maria
-                        <span>Eduarda</span>
-                    </h1>
+                    <div>
 
-                </div>
+                        <div class="number17">
+                            17
+                        </div>
 
-                <div class="magic-card-bottom">
-                    UM NOVO CAPÍTULO
+                        <h1>
+                            Maria
+                            <span>Eduarda</span>
+                        </h1>
+
+                    </div>
+
+                    <div class="magic-card-bottom">
+                        UM NOVO CAPÍTULO
+                    </div>
+
                 </div>
 
             </div>
 
+
+            <button class="magic-button card-button" onclick="goTo(4)">
+
+                CONTINUAR
+
+            </button>
+
         </div>
 
-
-        <button
-            class="magic-button card-button"
-            onclick="goTo(4)">
-
-            CONTINUAR
-
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      TELA 04
      AGORA É O MURAL
 ===================================================== -->
 
-<section
-    class="screen"
-    id="screen4">
+    <section class="screen" id="screen4">
 
-    <div class="mural-scene">
+        <div class="mural-scene">
 
-        <div class="eyebrow">
-          
-        </div>
+            <div class="eyebrow">
 
-        <h2>
-            Algumas Pessoas
-        </h2>
+            </div>
 
-        <p>
-            que tornam essa história ainda mais especial.<br>
-            
-        </p>
+            <h2>
+                Algumas Pessoas
+            </h2>
+
+            <p>
+                que tornam essa história ainda mais especial.<br>
+
+            </p>
 
 
-        <!--
+            <!--
             AQUI VOCÊ COLOCA UMA ÚNICA IMAGEM.
 
             Essa imagem será a montagem com:
@@ -1450,554 +1371,538 @@ body{
             mural.jpg
         -->
 
-        <div
-            class="photo-mural"
-            id="photoMural"
-            onclick="highlightMural()">
+            <div class="photo-mural" id="photoMural" onclick="highlightMural()">
 
-            <img
-                src="aniversario (1179 x 1656 px) (1179 x 1343 px).png"
-                alt="Mural de pessoas especiais">
+                <img src="aniversario (1179 x 1656 px) (1179 x 1343 px).png" alt="Mural de pessoas especiais">
+
+            </div>
+
+
+            <button class="magic-button" onclick="goTo(5)">
+
+                CONTINUAR
+
+            </button>
 
         </div>
 
-
-        <button
-            class="magic-button"
-            onclick="goTo(5)">
-
-            CONTINUAR
-
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      TELA 05
 ===================================================== -->
 
-<section
-    class="screen"
-    id="screen5">
+    <section class="screen" id="screen5">
 
-    <div class="details-scene">
+        <div class="details-scene">
 
-        <div class="eyebrow">
-            agora sim
+            <div class="eyebrow">
+                agora sim
+            </div>
+
+            <h2>
+                Guarde esta<br>
+                <em>data.</em>
+            </h2>
+
+
+            <div class="details-box">
+
+
+                <div class="detail">
+
+                    <label>
+                        DATA
+                    </label>
+
+                    <strong>
+                        23 DE OUTUBRO DE 2026
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <label>
+                        HORÁRIO
+                    </label>
+
+                    <strong>
+                        18:30
+                    </strong>
+
+                </div>
+
+
+                <div class="detail">
+
+                    <label>
+                        LOCAL
+                    </label>
+
+                    <strong>
+                        Rua João Paul, 280 - Espaço Gourmet
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="magic-button details-button" onclick="goTo(6)">
+
+                CONTINUAR
+
+            </button>
+
         </div>
 
-        <h2>
-            Guarde esta<br>
-            <em>data.</em>
-        </h2>
+    </section>
 
 
-        <div class="details-box">
-
-
-            <div class="detail">
-
-                <label>
-                    DATA
-                </label>
-
-                <strong>
-                    23 DE OUTUBRO DE 2026
-                </strong>
-
-            </div>
-
-
-            <div class="detail">
-
-                <label>
-                    HORÁRIO
-                </label>
-
-                <strong>
-                    14:00
-                </strong>
-
-            </div>
-
-
-            <div class="detail">
-
-                <label>
-                    LOCAL
-                </label>
-
-                <strong>
-                    LOCAL DA FESTA
-                </strong>
-
-            </div>
-
-
-        </div>
-
-
-        <button
-            class="magic-button details-button"
-            onclick="goTo(6)">
-
-            CONTINUAR
-
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
+    <!-- =====================================================
      TELA 06
 ===================================================== -->
 
-<section
-    class="screen"
-    id="screen6">
+    <section class="screen" id="screen6">
 
-    <div class="final-scene">
+        <div class="final-scene">
 
-        <div class="small">
-            VOCÊ ESTÁ CONVIDADO
+            <div class="small">
+                VOCÊ ESTÁ CONVIDADO
+            </div>
+
+
+            <div class="final-number">
+                17
+            </div>
+
+
+            <h2>
+                Maria Eduarda
+            </h2>
+
+
+            <p>
+
+                Uma noite especial merece<br>
+
+                pessoas especiais.
+
+            </p>
+
+
+            <button class="final-button" onclick="celebrate()">
+
+                EU VOU
+
+            </button>
+
         </div>
 
-
-        <div class="final-number">
-            17
-        </div>
-
-
-        <h2>
-            Maria Eduarda
-        </h2>
-
-
-        <p>
-
-            Uma noite especial merece<br>
-
-            pessoas especiais.
-
-        </p>
-
-
-        <button
-            class="final-button"
-            onclick="celebrate()">
-
-            EU VOU
-
-        </button>
-
-    </div>
-
-</section>
+    </section>
 
 
 
-<script>
+    <script>
 
 
-/* =========================================================
-   PARTÍCULAS
-========================================================= */
+        /* =========================================================
+           PARTÍCULAS
+        ========================================================= */
 
-const particles =
-    document.getElementById("particles");
-
-
-for(let i = 0; i < 50; i++){
-
-    const p =
-        document.createElement("div");
-
-    p.className =
-        "particle";
-
-    p.style.left =
-        Math.random() * 100 + "%";
-
-    p.style.animationDuration =
-        (5 + Math.random() * 8) + "s";
-
-    p.style.animationDelay =
-        Math.random() * 8 + "s";
-
-    particles.appendChild(p);
-}
+        const particles =
+            document.getElementById("particles");
 
 
-/* =========================================================
-   TROCA DE TELAS
-========================================================= */
+        for (let i = 0; i < 50; i++) {
 
-function goTo(number){
+            const p =
+                document.createElement("div");
 
-    document
-        .querySelectorAll(".screen")
-        .forEach(screen => {
+            p.className =
+                "particle";
 
-            screen.classList.remove("active");
+            p.style.left =
+                Math.random() * 100 + "%";
 
-        });
+            p.style.animationDuration =
+                (5 + Math.random() * 8) + "s";
 
+            p.style.animationDelay =
+                Math.random() * 8 + "s";
 
-    setTimeout(() => {
-
-        document
-            .getElementById(
-                "screen" + number
-            )
-            .classList.add("active");
-
-    },100);
-
-}
+            particles.appendChild(p);
+        }
 
 
-/* =========================================================
-   VIBRAÇÃO
-========================================================= */
+        /* =========================================================
+           TROCA DE TELAS
+        ========================================================= */
 
-function vibrate(amount = 18){
+        function goTo(number) {
 
-    if(
-        navigator.vibrate &&
-        /Android|iPhone|iPad|iPod/i.test(
-            navigator.userAgent
-        )
-    ){
+            document
+                .querySelectorAll(".screen")
+                .forEach(screen => {
 
-        navigator.vibrate(amount);
+                    screen.classList.remove("active");
 
-    }
-
-}
+                });
 
 
-/* =========================================================
-   EXPLOSÃO DO ENVELOPE
-========================================================= */
+            setTimeout(() => {
 
-function envelopeBurst(){
+                document
+                    .getElementById(
+                        "screen" + number
+                    )
+                    .classList.add("active");
 
-    const colors = [
-        "#ffffff",
-        "#e4c6ff",
-        "#c47aff",
-        "#9e4ed0",
-        "#f2ddff"
-    ];
+            }, 100);
+
+        }
 
 
-    for(let i = 0; i < 45; i++){
+        /* =========================================================
+           VIBRAÇÃO
+        ========================================================= */
 
-        const particle =
-            document.createElement("div");
+        function vibrate(amount = 18) {
 
-        particle.className =
-            "burst";
-
-        particle.style.background =
-            colors[
-                Math.floor(
-                    Math.random() *
-                    colors.length
+            if (
+                navigator.vibrate &&
+                /Android|iPhone|iPad|iPod/i.test(
+                    navigator.userAgent
                 )
+            ) {
+
+                navigator.vibrate(amount);
+
+            }
+
+        }
+
+
+        /* =========================================================
+           EXPLOSÃO DO ENVELOPE
+        ========================================================= */
+
+        function envelopeBurst() {
+
+            const colors = [
+                "#ffffff",
+                "#e4c6ff",
+                "#c47aff",
+                "#9e4ed0",
+                "#f2ddff"
             ];
 
-        const angle =
-            Math.random() * Math.PI * 2;
 
-        const distance =
-            120 + Math.random() * 300;
+            for (let i = 0; i < 45; i++) {
 
-        const x =
-            Math.cos(angle) * distance;
+                const particle =
+                    document.createElement("div");
 
-        const y =
-            Math.sin(angle) * distance;
+                particle.className =
+                    "burst";
+
+                particle.style.background =
+                    colors[
+                    Math.floor(
+                        Math.random() *
+                        colors.length
+                    )
+                    ];
+
+                const angle =
+                    Math.random() * Math.PI * 2;
+
+                const distance =
+                    120 + Math.random() * 300;
+
+                const x =
+                    Math.cos(angle) * distance;
+
+                const y =
+                    Math.sin(angle) * distance;
 
 
-        particle.animate(
+                particle.animate(
 
-            [
-                {
-                    transform:
-                        "translate(-50%,-50%) scale(.2)",
+                    [
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(.2)",
 
-                    opacity:1
-                },
+                            opacity: 1
+                        },
 
-                {
-                    transform:
-                        `translate(
+                        {
+                            transform:
+                                `translate(
                             calc(-50% + ${x}px),
                             calc(-50% + ${y}px)
                         )
                         scale(1.3)`,
 
-                    opacity:0
-                }
-            ],
+                            opacity: 0
+                        }
+                    ],
 
-            {
-                duration:
-                    1100 + Math.random() * 700,
+                    {
+                        duration:
+                            1100 + Math.random() * 700,
 
-                easing:
-                    "cubic-bezier(.22,.61,.36,1)",
+                        easing:
+                            "cubic-bezier(.22,.61,.36,1)",
 
-                fill:"forwards"
+                        fill: "forwards"
+                    }
+
+                );
+
+
+                document.body.appendChild(
+                    particle
+                );
+
+
+                setTimeout(() => {
+
+                    particle.remove();
+
+                }, 2000);
+
             }
 
-        );
+        }
 
 
-        document.body.appendChild(
-            particle
-        );
+        /* =========================================================
+           ABRIR ENVELOPE
+        ========================================================= */
+
+        function openEnvelope() {
+
+            const envelope =
+                document.getElementById(
+                    "envelope"
+                );
+
+            if (
+                envelope.classList.contains("open")
+            ) {
+
+                return;
+
+            }
 
 
-        setTimeout(() => {
-
-            particle.remove();
-
-        },2000);
-
-    }
-
-}
+            vibrate(35);
 
 
-/* =========================================================
-   ABRIR ENVELOPE
-========================================================= */
-
-function openEnvelope(){
-
-    const envelope =
-        document.getElementById(
-            "envelope"
-        );
-
-    if(
-        envelope.classList.contains("open")
-    ){
-
-        return;
-
-    }
-
-
-    vibrate(35);
-
-
-    envelope.classList.add(
-        "open"
-    );
-
-
-    setTimeout(() => {
-
-        document
-            .getElementById(
-                "revealFlash"
-            )
-            .classList.add("go");
-
-        envelopeBurst();
-
-    },700);
-
-
-    setTimeout(() => {
-
-        goTo(3);
-
-    },1450);
-
-}
-
-
-/* =========================================================
-   MURAL
-   TOQUE NA MONTAGEM
-========================================================= */
-
-function highlightMural(){
-
-    const mural =
-        document.getElementById(
-            "photoMural"
-        );
-
-    mural.classList.toggle(
-        "active"
-    );
-
-    vibrate(18);
-
-}
-
-
-/* =========================================================
-   CONFETES FINAIS
-========================================================= */
-
-function createConfetti(){
-
-    const colors = [
-        "#b86cff",
-        "#d8b1ff",
-        "#ffffff",
-        "#8b3db8",
-        "#f0dcff",
-        "#c58aff"
-    ];
-
-
-    for(let i = 0; i < 130; i++){
-
-        const c =
-            document.createElement("div");
-
-        c.className =
-            "confetti";
-
-
-        /*
-            O confete nasce no centro,
-            criando uma explosão para
-            todos os lados.
-        */
-
-        c.style.left =
-            "50%";
-
-        c.style.top =
-            "50%";
-
-
-        c.style.background =
-            colors[
-                Math.floor(
-                    Math.random() *
-                    colors.length
-                )
-            ];
-
-
-        c.style.width =
-            (4 + Math.random() * 6) + "px";
-
-
-        c.style.height =
-            (7 + Math.random() * 12) + "px";
-
-
-        const angle =
-            Math.random() *
-            Math.PI *
-            2;
-
-
-        const distance =
-            120 +
-            Math.random() *
-            Math.max(
-                window.innerWidth,
-                window.innerHeight
+            envelope.classList.add(
+                "open"
             );
 
 
-        const x =
-            Math.cos(angle) *
-            distance;
+            setTimeout(() => {
+
+                document
+                    .getElementById(
+                        "revealFlash"
+                    )
+                    .classList.add("go");
+
+                envelopeBurst();
+
+            }, 700);
 
 
-        const y =
-            Math.sin(angle) *
-            distance;
+            setTimeout(() => {
+
+                goTo(3);
+
+            }, 1450);
+
+        }
 
 
-        const rotation =
-            Math.random() * 1200 - 600;
+        /* =========================================================
+           MURAL
+           TOQUE NA MONTAGEM
+        ========================================================= */
+
+        function highlightMural() {
+
+            const mural =
+                document.getElementById(
+                    "photoMural"
+                );
+
+            mural.classList.toggle(
+                "active"
+            );
+
+            vibrate(18);
+
+        }
 
 
-        c.animate(
+        /* =========================================================
+           CONFETES FINAIS
+        ========================================================= */
 
-            [
-                {
-                    transform:
-                        "translate(-50%,-50%) scale(.3) rotate(0deg)",
+        function createConfetti() {
 
-                    opacity:1
-                },
+            const colors = [
+                "#b86cff",
+                "#d8b1ff",
+                "#ffffff",
+                "#8b3db8",
+                "#f0dcff",
+                "#c58aff"
+            ];
 
-                {
-                    transform:
-                        `translate(
+
+            for (let i = 0; i < 130; i++) {
+
+                const c =
+                    document.createElement("div");
+
+                c.className =
+                    "confetti";
+
+
+                /*
+                    O confete nasce no centro,
+                    criando uma explosão para
+                    todos os lados.
+                */
+
+                c.style.left =
+                    "50%";
+
+                c.style.top =
+                    "50%";
+
+
+                c.style.background =
+                    colors[
+                    Math.floor(
+                        Math.random() *
+                        colors.length
+                    )
+                    ];
+
+
+                c.style.width =
+                    (4 + Math.random() * 6) + "px";
+
+
+                c.style.height =
+                    (7 + Math.random() * 12) + "px";
+
+
+                const angle =
+                    Math.random() *
+                    Math.PI *
+                    2;
+
+
+                const distance =
+                    120 +
+                    Math.random() *
+                    Math.max(
+                        window.innerWidth,
+                        window.innerHeight
+                    );
+
+
+                const x =
+                    Math.cos(angle) *
+                    distance;
+
+
+                const y =
+                    Math.sin(angle) *
+                    distance;
+
+
+                const rotation =
+                    Math.random() * 1200 - 600;
+
+
+                c.animate(
+
+                    [
+                        {
+                            transform:
+                                "translate(-50%,-50%) scale(.3) rotate(0deg)",
+
+                            opacity: 1
+                        },
+
+                        {
+                            transform:
+                                `translate(
                             calc(-50% + ${x}px),
                             calc(-50% + ${y}px)
                         )
                         rotate(${rotation}deg)`,
 
-                    opacity:0
-                }
-            ],
+                            opacity: 0
+                        }
+                    ],
 
-            {
-                duration:
-                    1300 +
-                    Math.random() * 1300,
+                    {
+                        duration:
+                            1300 +
+                            Math.random() * 1300,
 
-                easing:
-                    "cubic-bezier(.12,.7,.2,1)",
+                        easing:
+                            "cubic-bezier(.12,.7,.2,1)",
 
-                fill:"forwards"
+                        fill: "forwards"
+                    }
+
+                );
+
+
+                document.body.appendChild(c);
+
+
+                setTimeout(() => {
+
+                    c.remove();
+
+                }, 3000);
+
             }
 
-        );
+        }
 
 
-        document.body.appendChild(c);
+        /* =========================================================
+           FINAL
+           SOMENTE A EXPLOSÃO DE CONFETES
+        ========================================================= */
+
+        function celebrate() {
+
+            vibrate(50);
+
+            createConfetti();
+
+        }
 
 
-        setTimeout(() => {
-
-            c.remove();
-
-        },3000);
-
-    }
-
-}
-
-
-/* =========================================================
-   FINAL
-   SOMENTE A EXPLOSÃO DE CONFETES
-========================================================= */
-
-function celebrate(){
-
-    vibrate(50);
-
-    createConfetti();
-
-}
-
-
-</script>
+    </script>
 
 </body>
 
 </html>
-
